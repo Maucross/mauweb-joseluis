@@ -7,15 +7,15 @@ function showInstructions() {
 }
 function downloadImage() {
     const link = document.createElement('a');
-    link.href = 'images/MilaDetalles-qr.png';
-    link.download = 'images/MilaDetalles-qr.png';
+    link.href = 'images/profile-qr.jpg';
+    link.download = 'images/profile-qr.jpg';
     link.click();
 }
 
 function sharePage() {
     if (navigator.share) {
         navigator.share({
-            title: 'Mila Detalles',
+            title: 'Jose Luis Cahua',
             text: '¡Dale un vistazo a mi sitio web ^^',
             url: window.location.href
         }).then(() => {
